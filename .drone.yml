@@ -1,3 +1,5 @@
 image: go1.3
+
 script:  
+
   - ./.drone/build.sh
