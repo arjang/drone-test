@@ -1,3 +1,12 @@
-image: go1.3
-script:  
-  - ./.drone/build.sh
+image: ruby
+services:
+  - postgresql
+  - redis
+script:
+  - mkdir -p /tmp/bundle
+  - sudo chown -R ubuntu:ubuntu /tmp/bundle
+  - bundle install -j8 --path /tmp/bundle
+  - cp config/database.yml.example config/database.yml
+  - bundle exec rake db:create db:migrate spec
+cache:
+  - /tmp/bundle
