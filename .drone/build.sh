@@ -1,4 +1,5 @@
 #!/bin/bash
 set -e
-cd /var/cache/drone/src/github.com/arjang/drone-test
+mkdir /home/ubuntu/go/src/github.com/docker-build
+cd /home/ubuntu/go/src/github.com/docker-build
 sudo docker build -t bamo/go .
