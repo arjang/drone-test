@@ -1,2 +1,2 @@
 # drone-test
-experimenting with drone
+experimenting with drone and mesos
