@@ -9,6 +9,5 @@ script:
   - bundle install -j8 --path /tmp/bundle
   - cp config/database.yml.example config/database.yml
   - bundle exec rake db:create db:migrate spec
-  
 cache:
   - /tmp/bundle
