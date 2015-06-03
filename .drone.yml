@@ -1,5 +1,4 @@
 image: ruby
-
 services:
   - postgresql
   - redis
