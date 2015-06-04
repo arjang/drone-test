@@ -3,7 +3,6 @@ image: ruby
 services:
   - postgresql
   - redis
-  
 script:
   - mkdir -p /tmp/bundle
   - sudo chown -R ubuntu:ubuntu /tmp/bundle
