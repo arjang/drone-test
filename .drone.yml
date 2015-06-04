@@ -3,7 +3,6 @@ services:
   - postgresql
   - redis
 script:
-
   - mkdir -p /tmp/bundle
   - sudo chown -R ubuntu:ubuntu /tmp/bundle
   - bundle install -j8 --path /tmp/bundle
